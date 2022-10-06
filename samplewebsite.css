@@ -1,0 +1,770 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    height: 20rem;
+    background: url("./pexels-pok-rie-697313.jpg") center no-repeat;
+    background-position: 20% 20%;
+    background-size: cover;
+    display: flex;
+    box-shadow: 0 4rem 4rem rgba(0, 0, 0, .7);
+}
+
+.navigation-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backgrodund-color: #ccc;
+    width: 100%;
+}
+
+.navigation-profile-image {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    margin-left: 5rem;
+    border: 2px solid #fff;
+    transition: all .5s;
+    animation: anim 3s;
+}
+
+.navigation-profile-image:hover {
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .5);
+    transform: translate(2px, 2px);
+    transform: scale(1.1);
+}
+
+
+.navigation-list {
+    list-style: none;
+    padding: 0; /*This is done so that the list items are perfectly centered because list items
+    have default padding*/
+    height: 28rem;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    background-coldor: #bbb;
+    max-height: 20rem;
+}
+
+.navigation-list-item {
+    margin-bottom: 6rem;
+    background-codlor: #bbb;
+    margin: 0 2rem 0 4rem;
+    text-align: center;
+}
+
+.navigation-list-item-text {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    transition: all .4s;
+    text-transform: uppercase;
+}
+
+.navigation-list-item-text:hover {
+    text-decoration: underline;
+    transform: translateY(2px);
+}
+
+.navigation-heading-text {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    -webkit-font-smoothing: antialiased;
+    transition: all .3s;
+    /* margin-right: 40rem; */
+}
+
+.navigation-heading-text:hover {
+    color: #deaa86;
+}
+
+
+.navigation-heading-text-anchor {
+    text-decoration: none;
+    animation: anim 2.5s .5s backwards;
+}
+
+.skincare {
+    animation: anim 3s .5s backwards
+}
+
+.fitness {
+    animation: anim 3s .5s backwards
+}
+
+.food {
+    animation: anim 3s .5s backwards
+}
+
+.travel {
+    animation: anim 3s .5s backwards
+}
+
+@keyframes anim { /*This animation makes the heading appear when the page is loaded*/
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.icons {
+    background-color: transparent;
+    border: none;
+}
+
+.social-link {
+    font-size: 5rem;
+    color: #deaa86;
+    transition: color .5s;
+}
+
+.social-link:hover {
+    color: #ff97b7;
+}
+
+.social-media-link {
+    font-size: 5rem;
+    color: #ff97b7;
+    transition: color .5s;
+}
+
+.social-media-link:hover {
+    color: #deaa86;
+}
+
+
+/* About Me */
+.about-me-wrapper {
+    background-color: transparent;
+    height: 100vh;
+    width: 100vw;
+}
+.about-me {
+    /* border: 3px solid aqua; */
+    color: #000;
+    display: inline-flex;
+    margin-top: 28rem;
+    width: 100%;
+    height: 68%;
+    box-sizing: border-box;
+}
+
+.about-me-header {
+    font-size: 7rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    margin-top: -4rem;
+    background-color: #b85d1c;
+    text-align: center;
+    width: 47.3rem;
+    margin-left: 15rem;
+}
+
+.about-me-header:hover {
+    text-decoration: underline;
+}
+
+
+.about-me-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-me-writing {
+    width: 50%;
+    text-align: center;
+}
+
+.about-me-paragraph {
+    font-size: 2.5rem;
+    margin-left: 15rem;
+    width: 45rem;
+    margin-top: -5rem;
+    line-height: 4rem;
+    border:2px solid #deaa86;
+    color: #50514f;
+    padding: 1rem;
+}
+
+.about-me-images {
+    flex: 1 1;
+    position: relative; /*used to place images on top of each other*/
+    cursor: pointer;
+    margin-left: 20rem;
+    margin-right: 30rem;
+    transition: all 2s;
+}
+
+.social-icons-list {
+    text-align: center;
+    width: 10%;
+    list-style: none;
+    margin-top: -43rem;
+    margin-left: -2rem;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
+}
+
+
+.about-me-images .image-1 {
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+.about-me-images .image-2 {
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+.about-me-images .image-3 {
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+.about-me-images .image-4 {
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+
+.about-me-images:hover .image-1 {
+    transform: translate(-80%, -3%)
+}
+.about-me-images:hover .image-2 {
+    transform: translate(30%, -3%)
+}
+.about-me-images:hover .image-3 {
+    transform: translate(30%, -110%)
+}
+.about-me-images:hover .image-4 {
+    transform: translate(-80%, -110%)
+}
+
+.image {
+    width: 25rem;
+    border: 2px solid #deaa86;
+    position: absolute;/*used to place images on top of each other*/
+    top: 50%; /*used to place images on top of each other*/
+    left: 50%; /*used to place images on top of each other*/
+    box-shadow: 0 3rem 6rem rgba(0,0,0,.4);
+    border-radius: .4rem;
+    border: .2rem solid #b85d1c;
+    backface-visibility: hidden;
+}
+
+.image-1 {
+    transform: translate(-20%, -90%); /*used to place images on top of each other*/
+}
+
+.image-2 {
+    transform: translate(-70%, -70%); /*used to place images on top of each other*/
+}
+
+.image-3 {
+    transform: translate(-50%, -50%); /*used to place images on top of each other*/
+}
+
+.image-4 {
+    transform: translate(-30%, -30%); /*used to place images on top of each other*/
+}
+/* End of About Me */
+
+/* Responsive */
+@media (min-width: 1850px) { /*2000px OR more*/
+    .about-me-header {
+        margin-left: 25rem;
+        width: 73.3rem;
+    }
+
+    .about-me-paragraph {
+        margin-left: 25rem;
+        width: 65rem;
+        font-size: 3rem;
+        padding: 4rem;
+        margin-top: -1.5rem;
+    }
+
+    .about-me-images {
+        transform: scale(1.1);
+        margin-top: -3rem;
+        height: 100%;
+    }
+
+    .navigation {
+        height: 16rem;
+    }
+
+    .navigation-list-item {
+        margin-right: 1rem;
+    }
+
+    .navigation-heading-text {
+        letter-spacing: 1rem;
+        font-size: 50rem;
+    }
+
+    .social-media-link {
+        font-size: 6rem;
+    }
+
+    .social-icons-list {
+        margin-top: -48rem;
+    }
+
+    .navigation-heading-text {
+        font-size: 3rem;
+    }
+
+    .about-me-header {
+        font-size: 5.5rem;
+    }
+}
+
+@media (max-width: 1850px) {
+    .about-me-header {
+        font-size: 4.5rem;
+    }
+
+    .about-me-paragraph {
+        margin-top: -2rem;
+    }
+
+    .navigation-heading-text {
+        font-size: 3.5rem;
+        letter-spacing: .8rem;
+    }
+}
+
+@media (max-width: 1400px) { /*1400px OR less*/
+    .about-me-images {
+        transform: scale(.9);
+        margin-top: -10rem;
+    }
+
+    .about-me-header {
+        transform: scale(.9);
+        font-size: 5rem;
+        margin-top: -5.6rem;
+    }
+
+    .about-me-paragraph {
+        transform: scale(.9);
+        font-size: 2rem;
+        height: 60rem;
+        margin-top: -6rem;
+    }
+
+    .navigation {
+        height: 17rem;
+    }
+
+    .social-icons-list {
+        margin-top: -55rem;
+    }
+
+    .navigation-heading-text {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-me-images {
+        margin-right: 30rem;
+        transform: scale(.7);
+        margin-top: -15rem;
+    }
+
+    .about-me-header {
+        transform: scale(.8);
+        font-size: 5rem;
+        margin-top: -1.6rem;
+        margin-left: 11rem;
+        width: 37.5rem;
+    }
+
+    .about-me-paragraph {
+        transform: scale(.8);
+        font-size: 2rem;
+        height: 50rem;
+        margin-left: 11rem;
+        width: 35rem;
+        margin-top: -9rem;
+    }
+
+    .social-media-link {
+        font-size: 4rem;
+    }
+
+    .social-icons-list {
+        margin-top: -45rem;
+    }
+
+    .navigation {
+        /* width: 95%; */
+        height: 15rem;
+    }
+
+    .navigation-header {
+        transform: scaleX(.8);
+    }
+
+    .social-link {
+        font-size: 4rem;
+    }
+
+    .navigation-list-item-text {
+        font-size: 1.8rem;
+    }
+
+    .navigation-list-item {
+        margin-right: 1rem;
+    }
+
+    .navigation-list {
+        margin-right: -2rem;
+    }
+
+    .navigation-profile-image {
+        margin-left: -5rem;
+        transform: scale(.9);
+    }
+
+    .navigation-heading-text {
+        font-size: 2.7rem;
+        margin-left: -7rem;
+        letter-spacing: .5rem;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .about-me-images {
+        /* margin-right: 70rem; */
+        transform: scale(.5);
+        margin-top: 43rem;
+        margin-left: -7rem;
+        /* margin-left: 5rem; */
+    }
+
+    .about-me-images:hover .image-1 {
+        transform: translate(-93%, -110%) scale(.9);
+    }
+    .about-me-images:hover .image-2 {
+        transform: translate(30%, -110%) scale(.9);
+    }
+    .about-me-images:hover .image-3 {
+        transform: translate(155%, -110%) scale(.9);
+    }
+    .about-me-images:hover .image-4 {
+        transform: translate(-210%, -110%) scale(.9);
+    }
+
+    .about-me-header {
+        transform: scale(.6);
+        font-size: 5rem;
+        margin-top: -7.6rem;
+        margin-left: 8.3rem;
+        /* margin-left: -1rem; */
+        /* width: 87.5rem; */
+        width: 93.5vh;
+        margin-right: 50rem;
+    }
+
+    .about-me-paragraph {
+        transform: scale(.6);
+        font-size: 2rem;
+        height: 50rem;
+        margin-left: 8.5rem;
+        /* margin-left: -1rem; */
+        /* width: 85rem; */
+        width: 90vh;
+        margin-top: -15rem;
+    }
+
+    .social-media-link {
+        font-size: 4rem;
+    }
+
+    .social-icons-list {
+        margin-top: -37rem;
+    }
+
+    .navigation-list-item-text {
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+    }
+
+    .navigation-list-item {
+        margin-right: .5rem;
+    }
+
+    .navigation-list {
+        margin-right: -3rem;
+    }
+
+    .navigation-profile-image {
+        margin-left: -7rem;
+        transform: scale(.8);
+    }
+
+    .navigation-heading-text {
+        font-size: 2.2rem;
+        margin-left: -4rem;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .social-media-link {
+        font-size: 3rem;
+    }
+
+    .about-me-header {
+        width: 50.5rem;
+        margin-left: 8.5rem;
+        font-size: 4rem;
+        margin-top: -14rem;
+    }
+
+    .about-me-paragraph {
+        width: 48rem;
+        font-size: 1.7rem;
+        margin-top: -14rem;
+    }
+
+    .about-me-images {
+        margin-top: 25rem;
+        transform: scale(.5);
+    }
+
+    .navigation {
+        height: 10rem;
+    }
+
+    .navigation-profile-image {
+        transform: scale(.6);
+    }
+
+    .navigation-list-item-text {
+        font-size: 1.3rem;
+    }
+
+    .social-icons-list {
+        margin-top: -40rem;
+    }
+
+    .social-link {
+        font-size: 2.5rem;
+    }
+
+    .navigation-heading-text {
+        font-size: 1.7rem;
+        margin-left: 3rem;
+        letter-spacing: .1rem;
+    }
+
+    .navigation-list {
+        margin-right: 2rem;
+    }
+
+    .navigation-list-item {
+        margin-right: -5rem;
+
+    }
+
+    .social-icons-spacing {
+        margin-top: -1rem;
+    }
+
+    .about-me-images {
+        margin-left: -10rem;
+    }
+
+    .about-me-images:hover .image-1 {
+        transform: translate(-43%, -70%) scale(.8);
+    }
+    .about-me-images:hover .image-2 {
+        transform: translate(50%, -70%) scale(.8);
+    }
+    .about-me-images:hover .image-3 {
+        transform: translate(150%, -70%) scale(.8);
+    }
+    .about-me-images:hover .image-4 {
+        transform: translate(-140%, -70%) scale(.8);
+    }
+
+}
+
+@media (max-width: 600px) {
+    .about-me-images {
+        margin-bottom: 10rem;
+    }
+
+    .image-1 {
+        transform: translate(-43%, -70%) scale(.7);
+    }
+    .image-2 {
+        transform: translate(50%, -70%) scale(.7);
+    }
+    .image-3 {
+        transform: translate(50%, 10%) scale(.7);
+    }
+    .image-4 {
+        transform: translate(-43%, 10%) scale(.7);
+    }
+    
+    .about-me-images:hover .image-1 {
+        transform: translate(-43%, -70%) scale(.8);
+    }
+    .about-me-images:hover .image-2 {
+        transform: translate(50%, -70%) scale(.8);
+    }
+    .about-me-images:hover .image-3 {
+        transform: translate(50%, 10%) scale(.8);
+        margin-top: 2rem;
+    }
+    .about-me-images:hover .image-4 {
+        transform: translate(-43%, 10%) scale(.8);
+        margin-top: 2rem;
+    }
+
+    .about-me-header {
+        width: 37.5rem;
+    }
+
+    .about-me-paragraph {
+        width: 35rem;
+    }
+
+    .navigation {
+        height: 9rem;
+    }
+
+    .navigation-profile-image {
+        transform: scale(.5);
+    }
+
+    .navigation-list-item-text {
+        font-size: 1rem;
+    }
+
+    .social-link {
+        font-size: 2rem;
+    }
+/*Test*/
+    .navigation-header {
+        display: flex;
+        flex-direction: column;
+        z-index: 0;
+    }
+    
+    .navigation {
+        height: 100%;
+        width: 12rem;
+        display: flex;
+        flex-direction: column;
+        z-index: 0;
+    }
+
+    .navigation-profile-image {
+        margin-left: .5rem;
+        transform: scale(.7);
+    }
+
+    .navigation-profile-image:hover {
+        transform: scale(.8);
+    }
+
+    .navigation-heading-text {
+        margin-left: .5rem;
+        text-align: center;
+    }
+
+    .about-me-writing {
+        z-index: 200;
+    }
+
+    .navigation-list {
+        display: flex;
+        flex-direction: row;
+        margin-left: 80rem;
+        margin-top: -23.2rem;
+        margin-right: 57rem;
+    }
+
+    .navigation-list-item {
+        margin-right: .1rem;
+    }
+
+    .social-link {
+        font-size: 4rem;
+    }
+
+    .social-icons-list {
+        margin-left: .5rem;
+        margin-top: -40rem;
+    }
+
+    .social-icons-spacing {
+        margin-bottom: 8rem;
+    }
+
+    .about-me-images {
+        margin-right: 15rem;
+    }
+
+    .social-media-link {
+        color: #deaa86;
+    }
+    
+    .social-media-link:hover {
+        color: #ff97b7;
+    }
+
+    .about-me-header {
+        margin-left: 16rem;
+        width: 30rem;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+
+    }
+
+    .about-me-paragraph {
+        margin-left: 16rem;
+        width: 27.5rem;
+        font-size: 1.3rem;
+    }
+
+    .navigation-list-item-text {
+        color: #212529;
+        font-size: 1.4rem;
+    }
+}
+/*End Test*/
+
+
+
+/* End of Responsive */
